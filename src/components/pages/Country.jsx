@@ -126,7 +126,7 @@ export default function Country(props) {
 					</div>
 					{/* Other */}
 					<div className="mt-16">
-						<h3 className="justify-center text-gray-900 font-semibold text-2xl ">
+						<h3 className="justify-center text-gray-900 font-semibold text-lg md:text-2xl ">
 							Other Stats
 						</h3>
 						<div className="justify-center flex mt-4">
