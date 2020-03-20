@@ -65,6 +65,14 @@ export default function GlobalStats() {
 							<p className="uppercase font-medium text-2xl">deaths</p>
 						</div>
 					</div>
+					<div className="text-center mt-4 md:mt-8">
+						<a
+							href="/countries"
+							className="underline font-semibold text-sm md:text-md text-gray-200"
+						>
+							View Breakdown by country
+						</a>
+					</div>
 				</motion.div>
 			) : (
 				<div className="bg-blue-900 py-8 min-h-screen "></div>
