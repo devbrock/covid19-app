@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { numberWithCommas } from '../../utils/NumbersWithCommas';
 import Loader from 'react-loader-spinner';
 import Axios from 'axios';
+import { motion } from 'framer-motion';
 
 export default function Country(props) {
 	const { country } = props.match.params;
@@ -27,9 +28,15 @@ export default function Country(props) {
 
 	return (
 		<div className="w-8/12 mx-auto my-8">
-			<h1 className="text-center text-5xl font-bold text-blue-900">{name}</h1>
 			{countryStats !== '' ? (
-				<>
+				<motion.div
+					animate={{ y: 0, opacity: 1 }}
+					transition={{ duration: 1 }}
+					initial={{ y: 100, opacity: 0 }}
+				>
+					<h1 className="text-center text-5xl font-bold text-blue-900">
+						{name}
+					</h1>
 					{/* Totals   */}
 					<div className="mt-8">
 						<h3 className="justify-center text-gray-900 font-semibold text-2xl ">
@@ -144,9 +151,9 @@ export default function Country(props) {
 							</div>
 						</div>
 					</div>
-				</>
+				</motion.div>
 			) : (
-				<div className="min-h-screen flex flex-col items-center ">
+				<div className="min-h-screen flex flex-col items-center">
 					<div className="flex-1">
 						<Loader type="Grid" color="#2a4365" />
 					</div>

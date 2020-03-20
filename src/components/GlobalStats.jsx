@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { numberWithCommas } from '../utils/NumbersWithCommas';
 import axios from 'axios';
+import { motion } from 'framer-motion';
 
 export default function GlobalStats() {
 	const [stats, setStats] = useState('');
@@ -14,7 +15,12 @@ export default function GlobalStats() {
 	return (
 		<div className="bg-blue-900 py-8 min-h-screen">
 			{stats !== '' ? (
-				<div id="landing" className="my-32 transition ease-in duration-700">
+				<motion.div
+					className="my-32"
+					animate={{ y: 0, opacity: 1 }}
+					transition={{ duration: 1 }}
+					initial={{ y: 100, opacity: 0 }}
+				>
 					<h1 className="text-center text-6xl font-bold uppercase text-gray-200">
 						Global Statistics on COVID-19
 					</h1>
@@ -59,7 +65,7 @@ export default function GlobalStats() {
 							<p className="uppercase font-medium text-2xl">deaths</p>
 						</div>
 					</div>
-				</div>
+				</motion.div>
 			) : (
 				<div className="bg-blue-900 py-8 min-h-screen "></div>
 			)}

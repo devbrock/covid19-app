@@ -7,6 +7,8 @@
 		"@testing-library/react": "^9.4.1",
 		"@testing-library/user-event": "^7.2.1",
 		"axios": "^0.19.2",
+		"framer-motion": "^1.10.0",
+		"fuse.js": "^5.0.7-beta",
 		"lodash": "^4.17.15",
 		"react": "^16.13.0",
 		"react-dom": "^16.13.0",
@@ -14,7 +16,8 @@
 		"react-loader-spinner": "^3.1.5",
 		"react-router-dom": "^5.1.2",
 		"react-scripts": "3.4.0",
-		"tailwindcss": "^1.2.0"
+		"tailwindcss": "^1.2.0",
+		"uuid": "^7.0.2"
 	},
 	"scripts": {
 		"start": "react-scripts start",

@@ -1,8 +1,14 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 export default function About() {
 	return (
-		<div className="w-8/12 mx-auto my-8 leading-loose">
+		<motion.div
+			className="w-8/12 mx-auto my-8 leading-loose"
+			animate={{ y: 0, opacity: 1 }}
+			transition={{ duration: 0.5 }}
+			initial={{ y: 100, opacity: 0 }}
+		>
 			<h1 className="text-4xl font-bold text-blue-900 uppercase">
 				About COVID-19
 			</h1>
@@ -86,6 +92,6 @@ export default function About() {
 				</a>
 				.
 			</p>
-		</div>
+		</motion.div>
 	);
 }

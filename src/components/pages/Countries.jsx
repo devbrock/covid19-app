@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 import axios from 'axios';
+import { motion } from 'framer-motion';
+import { numberWithCommas } from '../../utils/NumbersWithCommas';
 
 export default function Countries() {
 	const [countries, setCountries] = useState('');
@@ -40,7 +42,11 @@ export default function Countries() {
 	return (
 		<div className="py-8">
 			{countries !== '' ? (
-				<div>
+				<motion.div
+					animate={{ y: 0, opacity: 1 }}
+					transition={{ duration: 1 }}
+					initial={{ y: 100, opacity: 0 }}
+				>
 					<h1 className="text-center text-5xl font-bold uppercase text-blue-900">
 						Statistics Broken Down by Country
 					</h1>
@@ -89,20 +95,20 @@ export default function Countries() {
 									</th>
 									<th className="px-4 py-2 text-red-900  text-xl">
 										{' '}
-										{country.cases}{' '}
+										{numberWithCommas(country.cases)}{' '}
 										<span role="img" aria-label="vomit-emoji">
 											🤮
 										</span>{' '}
 									</th>
 									<th className="px-4 py-2 text-green-900 text-xl">
 										{' '}
-										{country.recovered}{' '}
+										{numberWithCommas(country.recovered)}{' '}
 										<span role="img" aria-label="happy-face-emoji">
 											🙂
 										</span>{' '}
 									</th>
 									<th className="px-4 py-2 text-gray-900 text-xl">
-										{country.deaths}{' '}
+										{numberWithCommas(country.deaths)}{' '}
 										<span role="img" aria-label="skull-emoji">
 											💀
 										</span>{' '}
@@ -111,7 +117,7 @@ export default function Countries() {
 							))}
 						</tbody>
 					</table>
-				</div>
+				</motion.div>
 			) : (
 				<div className="min-h-screen flex flex-col items-center ">
 					<div className="flex-1">
