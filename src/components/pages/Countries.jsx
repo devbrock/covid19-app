@@ -90,26 +90,26 @@ export default function Countries() {
 										key={country.country}
 										className="text-left border border-2 rounded my-4"
 									>
-										<th className="px-4 py-2 font-bold text-lg md:text-3xl text-blue-600 underline">
+										<th className="pl-2 py-2 font-bold text-lg md:text-3xl text-blue-600 underline">
 											<Link to={{ pathname: `/country/${country.country}` }}>
 												{country.country}
 											</Link>
 										</th>
-										<th className="px-4 py-2 text-red-900  text-lg md:text-xl">
+										<th className="md:px-4 py-2 text-red-900  text-lg md:text-xl">
 											{' '}
 											{numberWithCommas(country.cases)}{' '}
 											<span role="img" aria-label="vomit-emoji">
 												🤮
 											</span>{' '}
 										</th>
-										<th className="px-4 py-2 text-green-900 text-lg md:text-xl">
+										<th className="md:px-4 py-2 text-green-900 text-lg md:text-xl">
 											{' '}
 											{numberWithCommas(country.recovered)}{' '}
 											<span role="img" aria-label="happy-face-emoji">
 												🙂
 											</span>{' '}
 										</th>
-										<th className="px-4 py-2 text-gray-900 text-lg md:text-xl">
+										<th className="md:px-4 py-2 text-gray-900 text-lg md:text-xl">
 											{numberWithCommas(country.deaths)}{' '}
 											<span role="img" aria-label="skull-emoji">
 												💀
