@@ -1,17 +1,27 @@
 import React from 'react';
 import './App.css';
-import PostsList from './components/PostsList';
-import Header from './components/layout/Header';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Post from './components/Post';
+import Navbar from './components/layout/Navbar';
+import GlobalStats from './components/GlobalStats';
+import About from './components/pages/About';
+import Countries from './components/pages/Countries';
+import Country from './components/pages/Country';
 
 function App() {
 	return (
 		<Router>
 			<div className="App">
-				<Header />
-				<Route path="/" exact component={PostsList} />
-				<Route path="/:id" exact component={Post} />
+				<Navbar />
+				<Route exact path="/">
+					<GlobalStats />
+				</Route>
+				<Route exact path="/about">
+					<About />
+				</Route>
+				<Route exact path="/countries">
+					<Countries />
+				</Route>
+				<Route exact path="/country/:country" component={Country} />
 			</div>
 		</Router>
 	);

@@ -3,3 +3,19 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@keyframes slideInFromBottom {
+	0% {
+		transform: translateY(100%);
+		filter: opacity(0);
+	}
+	100% {
+		transform: translateY(0);
+		filter: opacity(1);
+	}
+}
+
+#landing {
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: 1s ease-out 0s 1 slideInFromBottom;
+}
