@@ -68,7 +68,7 @@ export default function GlobalStats() {
 					<div className="text-center mt-4 md:mt-8">
 						<a
 							href="/countries"
-							className="underline font-semibold text-sm md:text-md text-gray-200"
+							className="underline capitalize font-semibold text-sm md:text-md text-gray-200"
 						>
 							View Breakdown by country
 						</a>
