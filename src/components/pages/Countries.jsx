@@ -82,7 +82,7 @@ export default function Countries() {
 									key={country.country}
 									className="text-left border border-2 rounded my-4"
 								>
-									<th className="px-4 py-2 font-bold text-3xl text-blue-900">
+									<th className="px-4 py-2 font-bold text-3xl text-blue-600 underline">
 										<Link to={{ pathname: `/country/${country.country}` }}>
 											{country.country}
 										</Link>
