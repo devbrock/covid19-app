@@ -21,7 +21,7 @@ export default function GlobalStats() {
 					transition={{ duration: 1 }}
 					initial={{ y: 100, opacity: 0 }}
 				>
-					<h1 className="text-center text-4xl md:text-6xl font-bold uppercase text-gray-200">
+					<h1 className="text-center text-4xl md:text-6xl font-bold uppercase text-gray-200 px-4">
 						Global Statistics on COVID-19
 					</h1>
 					<div className="w-8/12 mx-auto justify-center sm:flex mt-8 shadow-lg rounded">

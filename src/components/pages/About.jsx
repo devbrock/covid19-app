@@ -9,7 +9,7 @@ export default function About() {
 			transition={{ duration: 0.5 }}
 			initial={{ y: 100, opacity: 0 }}
 		>
-			<h1 className="text-3xl md:text-4xl font-bold text-blue-900 uppercase">
+			<h1 className="text-3xl md:text-4xl font-bold text-blue-900 uppercase ">
 				About COVID-19
 			</h1>
 			<p className="text-lg font-medium text-gray-700 mt-4 text-justify md:text-left">
