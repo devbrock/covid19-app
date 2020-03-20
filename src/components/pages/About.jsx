@@ -12,7 +12,7 @@ export default function About() {
 			<h1 className="text-4xl font-bold text-blue-900 uppercase">
 				About COVID-19
 			</h1>
-			<p className="text-lg font-medium text-gray-700 mt-4">
+			<p className="text-lg font-medium text-gray-700 mt-4 text-justify md:text-left">
 				Coronavirus disease (COVID-19) is an infectious disease caused by a new
 				virus. The disease causes respiratory illness (like the flu) with
 				symptoms such as a cough, fever, and in more severe cases, difficulty
@@ -23,7 +23,7 @@ export default function About() {
 			<h2 className="text-2xl font-bold text-blue-900 uppercase mt-8">
 				How Does COVID-19 Spread?
 			</h2>
-			<p className="text-lg font-medium text-gray-700">
+			<p className="text-lg font-medium text-gray-700 text-justify md:text-left">
 				Coronavirus disease spreads primarily through contact with an infected
 				person when they cough or sneeze. It also spreads when a person touches
 				a surface or object that has the virus on it, then touches their eyes,
@@ -33,17 +33,17 @@ export default function About() {
 				Sympotoms
 			</h2>
 			<div
-				className="bg-yellow-100 border-l-4 border-yellow-500 text-gray-700 p-4"
+				className="bg-yellow-100 border-l-4 border-yellow-500 text-gray-700 p-4 my-4"
 				role="alert"
 			>
 				<p className="font-bold">Call Your Doctor:</p>
-				<p>
+				<p className="text-justify md:text-left">
 					If you think you have been exposed to COVID-19 and develop a fever and
 					symptoms, such as cough or difficulty breathing, call your healthcare
 					provider for medical advice.
 				</p>
 			</div>
-			<p className="text-lg font-medium text-gray-700">
+			<p className="text-lg font-medium text-gray-700 text-justify md:text-left">
 				If you develop emergency warning signs for COVID-19 get medical
 				attention immediately.
 			</p>
@@ -71,7 +71,7 @@ export default function About() {
 			<h3 className="text-xl font-bold text-blue-900 uppercase mt-8">
 				How are we getting this data?
 			</h3>
-			<p className="text-lg font-medium text-gray-700">
+			<p className="text-lg font-medium text-gray-700 text-justify md:text-left">
 				This application ingests data from{' '}
 				<a
 					href="https://github.com/javieraviles/covidAPI"

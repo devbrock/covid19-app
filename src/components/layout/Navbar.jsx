@@ -4,7 +4,7 @@ export default function Navbar() {
 	return (
 		<nav className="bg-blue-900 h-16 py-4 flex  align-middle items-center">
 			<ul className="flex align-middle items-center">
-				<li className="mx-4 font-bold text-xl text-gray-200">
+				<li className="mx-4 font-bold text-sm md:text-xl text-gray-200">
 					<a href="/">
 						<span role="img" aria-label="bar-chart-emoji">
 							📊
@@ -12,10 +12,10 @@ export default function Navbar() {
 						COVID-19 STATS
 					</a>
 				</li>
-				<li className="mx-4 font-medium text-lg text-gray-200">
+				<li className="mx-4 font-medium text-sm md:text-lg text-gray-200">
 					<a href="/countries">Countries</a>
 				</li>
-				<li className="mx-4 font-medium text-lg text-gray-200">
+				<li className="mx-4 font-medium text-sm md:text-lg text-gray-200">
 					<a href="/about">About</a>
 				</li>
 			</ul>
