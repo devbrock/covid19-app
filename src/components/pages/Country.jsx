@@ -106,7 +106,7 @@ export default function Country(props) {
 									{numberWithCommas(todayCases)}
 								</p>
 								<p className="uppercase font-medium text-md md:text-2xl">
-									cases
+									new cases
 								</p>
 							</div>
 							<div className="border border-2 flex-1 bg-gray-200 text-gray-900 px-3 py-1 md:px-8 md:py-6 text-center rounded-r">
@@ -119,7 +119,7 @@ export default function Country(props) {
 									{numberWithCommas(todayDeaths)}
 								</p>
 								<p className="uppercase font-medium text-md md:text-2xl">
-									deaths
+									new deaths
 								</p>
 							</div>
 						</div>
