@@ -17,7 +17,9 @@ export default function Countries() {
 	function getCountries() {
 		axios
 			.get('https://coronavirus-19-api.herokuapp.com/countries')
-			.then(res => setCountries(res.data));
+			.then((res) => {
+				setCountries(res.data);
+			});
 	}
 
 	function handleChange(e) {
@@ -85,9 +87,9 @@ export default function Countries() {
 								</tr>
 							</thead>
 							<tbody>
-								{countries.map(country => (
+								{countries.map((country) => (
 									<tr
-										key={country.country}
+										key={countries.indexOf(country)}
 										className="text-left border border-2 rounded my-4"
 									>
 										<th className="pl-2 py-2 font-bold text-lg md:text-2xl text-blue-600 underline">
