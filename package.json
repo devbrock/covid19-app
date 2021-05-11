@@ -9,7 +9,7 @@
 		"axios": "^0.19.2",
 		"framer-motion": "^1.10.0",
 		"fuse.js": "^5.0.7-beta",
-		"lodash": "^4.17.15",
+		"lodash": "^4.17.21",
 		"react": "^16.13.0",
 		"react-dom": "^16.13.0",
 		"react-icons": "^3.9.0",
